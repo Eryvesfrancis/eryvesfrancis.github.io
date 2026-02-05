@@ -38,12 +38,12 @@ body {
 
 /* Tab-specific CSS */
 .tab-content {
-    display: none;
+    display: none; /* Hides all content sections by default */
     padding: 50px 20px;
 }
 
 .tab-content.active {
-    display: block;
+    display: block; /* Shows the active content section */
 }
 
 .tab-button.active {
@@ -82,13 +82,11 @@ body {
     background-size: cover;
     background-position: center;
 }
-
 #project2-img {
     background-image: url('https://i.imgur.com/uW6P0xX.png');
     background-size: cover;
     background-position: center;
 }
-
 #project3-img {
     background-image: url('https://i.imgur.com/B9B1v2C.png');
     background-size: cover;
@@ -128,22 +126,4 @@ body {
     max-width: 800px;
     margin: auto;
     text-align: left;
-}
-
-/* ✅ NEW — Header Social & Contact Icons */
-.header-icons {
-    display: flex;
-    gap: 18px;
-    align-items: center;
-}
-
-.header-icons a {
-    color: white;
-    font-size: 18px;
-    transition: 0.3s ease;
-}
-
-.header-icons a:hover {
-    color: #00ffd5;
-    transform: scale(1.15);
 }
