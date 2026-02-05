@@ -4,64 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yves Francis' Portfolio</title>
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-    <header class="header">
-        <div class="logo">Yves Portfolio</div>
-        <ul class="nav-links">
-            <li><a href="#" class="tab-button" data-tab="about">About</a></li>
-            <li><a href="#" class="tab-button active" data-tab="projects">Projects</a></li>
-            <li><a href="#" class="tab-button" data-tab="experience">Experience</a></li>
-        </ul>
-    </header>
+<header class="header">
+    <div class="logo">Yves Portfolio</div>
 
-    <main class="main-content">
-        <div id="projects" class="tab-content active">
-            <div class="projects-container">
-                <div class="project-card">
-                    <div class="image-container" id="project1-img"></div>
-                    <h2>Projects</h2>
-                    <p>PAM</p>
-                    <a href="https://github.com/yourusername/project-1-repo" class="github-btn">GitHub</a>
-                </div>
-                <div class="project-card">
-                    <div class="image-container" id="project2-img"></div>
-                    <h2>Projects</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                    <a href="https://github.com/yourusername/project-2-repo" class="github-btn">GitHub</a>
-                </div>
-                <div class="project-card">
-                    <div class="image-container" id="project3-img"></div>
-                    <h2>Penetration Testing</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                    <a href="https://github.com/yourusername/project-3-repo" class="github-btn">GitHub</a>
-                </div>
-            </div>
-        </div>
+    <ul class="nav-links">
+        <li><a href="#" class="tab-button" data-tab="about">About</a></li>
+        <li><a href="#" class="tab-button active" data-tab="projects">Projects</a></li>
+        <li><a href="#" class="tab-button" data-tab="experience">Experience</a></li>
+    </ul>
 
-        <div id="about" class="tab-content">
-            <div class="content-container">
-                <h1>About Me</h1>
-                <p>InfoSec Engineer with 5 years of experience in CyberArk integration projects, cloud security projects, Privileged account management, Tech upgrade activities, Identity governance and administration projects, GRC projects, and vulnerability assessment
-</p>
-            </div>
-        </div>
+    <!-- ✅ Contact + Social Icons -->
+    <div class="header-icons">
 
-        <div id="experience" class="tab-content">
-            <div class="content-container">
-                <h1>Technical Skills:</h1>
-                <p>Identity & Access Management (IAM): CyberArk, Active Directory, LDAP integration</p>
-                <p>Privileged Access Management (PAM): CyberArk PAM, EPM, PSM, CPM, vault, PTA</p>
-                <p>Cloud security & Compliance: FGPP, AES, Key Vault, Data Encryption, GDPR, SOX, DLP policy, Role-Based Access control and Least Privilege Access Model</p>
-                <p>Vulnerability Scanners: Qualys and Tanium</p>
-                <p>SIEM & Monitoring: Splunk, ServiceNow</p>
-                <p>Tools Used: Jenkins, Bitbucket, RLM, GitHub, SoapUI, IntelliJ, Jira, AppD controller</p>
+        <!-- Resume -->
+        <a href="resume.pdf" target="_blank" title="Resume">
+            <i class="fas fa-file-pdf"></i>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <!-- GitHub Profile -->
+        <a href="https://github.com/YOUR_GITHUB" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <!-- Mobile -->
+        <a href="tel:+91XXXXXXXXXX" title="Call">
+            <i class="fas fa-phone"></i>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:youremail@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+    </div>
+</header>
+
+
+<main class="main-content">
+
+    <!-- Projects Tab -->
+    <div id="projects" class="tab-content active">
+        <div class="projects-container">
+
+            <div class="project-card">
+                <div class="image-container" id="project1-img"></div>
+                <h2>PAM</h2>
+                <a href="https://github.com/yourusername/project-1-repo" class="github-btn">
+                    <i class="fab fa-github"></i> Repo
+                </a>
             </div>
+
+            <div class="project-card">
+                <div class="image-container" id="project2-img"></div>
+                <h2>Cloud Security</h2>
+                <a href="https://github.com/yourusername/project-2-repo" class="github-btn">
+                    <i class="fab fa-github"></i> Repo
+                </a>
+            </div>
+
+            <div class="project-card">
+                <div class="image-container" id="project3-img"></div>
+                <h2>Penetration Testing</h2>
+                <a href="https://github.com/yourusername/project-3-repo" class="github-btn">
+                    <i class="fab fa-github"></i> Repo
+                </a>
+            </div>
+
         </div>
-    </main>
-    
-    <script src="script.js"></script>
+    </div>
+
+    <!-- About Tab -->
+    <div id="about" class="tab-content">
+        <div class="content-container">
+            <h1>About Me</h1>
+            <p>
+                InfoSec Engineer with 5 years of experience in CyberArk integration, cloud security,
+                Privileged Access Management, IGA, GRC, and vulnerability assessment.
+            </p>
+        </div>
+    </div>
+
+    <!-- Experience Tab -->
+    <div id="experience" class="tab-content">
+        <div class="content-container">
+            <h1>Technical Skills</h1>
+            <p><b>IAM:</b> CyberArk, Active Directory, LDAP</p>
+            <p><b>PAM:</b> CyberArk PAM, EPM, PSM, CPM, Vault, PTA</p>
+            <p><b>Cloud Security:</b> AES, Key Vault, GDPR, SOX, DLP, RBAC</p>
+            <p><b>Vulnerability:</b> Qualys, Tanium</p>
+            <p><b>SIEM:</b> Splunk, ServiceNow</p>
+            <p><b>Tools:</b> Jenkins, Bitbucket, GitHub, Jira, AppDynamics</p>
+        </div>
+    </div>
+
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
