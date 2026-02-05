@@ -147,3 +147,7 @@ body {
     color: #00ffd5;
     transform: scale(1.15);
 }
+
+.about-icons i {
+    font-size: 22px;
+}
