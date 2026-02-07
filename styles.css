@@ -95,3 +95,37 @@ body {
 .about-icons i:hover {
     transform: scale(1.2);
 }
+
+.contact-icon {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333; /* icon color */
+}
+
+.contact-icon .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: max-content;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -35px; /* below the icon */
+    
+    transition: opacity 0.3s;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    pointer-events: none;
+}
+
+.contact-icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
