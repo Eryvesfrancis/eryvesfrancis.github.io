@@ -148,3 +148,32 @@ body {
     border-bottom: 2px solid #fff;
     font-weight: bold;
 }
+
+.experience-card {
+    display: block;
+    background: #0f1b2d;
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    max-width: 700px;
+}
+
+.experience-card:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+.year {
+    color: #8aa0c6;
+    font-size: 14px;
+}
+
+.skills span {
+    background: #16324f;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
