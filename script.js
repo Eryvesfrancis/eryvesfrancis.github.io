@@ -13,3 +13,20 @@ tabs.forEach(tab => {
         document.getElementById(target).classList.add("active");
     });
 });
+function toggleAchievement(id) {
+
+
+const sections = document.querySelectorAll('.achievement-content');
+sections.forEach(sec => sec.style.display = 'none');
+
+
+document.getElementById(id).style.display = 'block';
+}
+
+
+// Default hide all except first
+window.addEventListener('DOMContentLoaded', () => {
+document.querySelectorAll('.achievement-content').forEach((el, index) => {
+el.style.display = index === 0 ? 'block' : 'none';
+});
+});
