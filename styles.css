@@ -149,31 +149,56 @@ body {
     font-weight: bold;
 }
 
+/* ===== EXPERIENCE CARD ===== */
 .experience-card {
     display: block;
-    background: #0f1b2d;
-    padding: 25px;
-    border-radius: 10px;
-    color: white;
+    background: #e0e0e0;   /* ⭐ Grey Background */
+    color: #000;            /* ⭐ Black Text */
+    padding: 30px;
+    border-radius: 14px;
     text-decoration: none;
-    max-width: 700px;
+    transition: 0.25s ease;
+    margin-top: 30px;
 }
 
 .experience-card:hover {
-    transform: translateY(-3px);
-    transition: 0.3s;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
-.year {
-    color: #8aa0c6;
+/* Year */
+.experience-card .year {
     font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Title */
+.experience-card h3 {
+    margin: 10px 0;
+    color: #000;
+}
+
+/* Description */
+.experience-card p {
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Skills Pills */
+.skills {
+    margin-top: 15px;
 }
 
 .skills span {
-    background: #16324f;
-    padding: 6px 12px;
+    display: inline-block;
+    background: #cfcfcf;   /* ⭐ Light Grey Pills */
+    color: #000;
+    padding: 6px 14px;
     border-radius: 20px;
     margin-right: 8px;
     font-size: 14px;
 }
+
 
