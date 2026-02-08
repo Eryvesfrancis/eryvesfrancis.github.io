@@ -290,5 +290,24 @@ border-bottom: none;
     color: white;
     border-color: #084298;
 }
+.action-link {
+    position: relative;
+}
+
+.action-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #0a58ca;
+    transition: width 0.3s ease;
+}
+
+.action-link:hover::after {
+    width: 100%;
+}
+
 
 
