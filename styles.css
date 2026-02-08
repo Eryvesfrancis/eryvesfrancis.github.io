@@ -255,4 +255,40 @@ border-bottom: 1px solid #ddd;
 .achievement-content li:last-child {
 border-bottom: none;
 }
+/* ===== Achievements Action Links ===== */
+
+.achievements-actions {
+    display: flex;
+    gap: 30px;              /* Space between words */
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.action-link {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0a58ca;         /* Visible clickable blue */
+    padding: 6px 14px;
+    border-radius: 20px;
+    background-color: #f1f3f5;
+    transition: all 0.25s ease;
+    border: 1px solid transparent;
+}
+
+/* Hover Effect */
+.action-link:hover {
+    background-color: #0a58ca;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Active / Selected */
+.action-link.active {
+    background-color: #0a58ca;
+    color: white;
+    border-color: #084298;
+}
+
 
