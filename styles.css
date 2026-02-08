@@ -1,10 +1,13 @@
+/* ===== GLOBAL ===== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    min-height: 100vh;   /* FULL SCREEN HEIGHT */
+    min-height: 100vh;
     background: linear-gradient(to bottom, #f0f0f0, #dcdcdc);
 }
+
+/* ===== HEADER ===== */
 .header {
     background-color: #000;
     color: #fff;
@@ -35,21 +38,23 @@ body {
     text-decoration: none;
 }
 
-/* Tabs */
+/* ===== TABS LAYOUT (CENTER WHOLE PAGE) ===== */
 .tab-content {
     display: none;
+    width: 100%;
 }
 
 .tab-content.active {
     display: block;
 }
 
-.tab-button.active {
-    border-bottom: 2px solid #fff;
-    font-weight: bold;
+/* ⭐ KEY: CENTER INNER CONTENT ONLY */
+.tab-content.active .content-container {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Projects */
+/* ===== PROJECTS ===== */
 .projects-container {
     display: flex;
     justify-content: center;
@@ -65,31 +70,36 @@ body {
     max-width: 350px;
 }
 
-/* About + Experience */
+/* ===== MAIN CONTENT CARD ===== */
 .content-container {
     background-color: #fff;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 800px;     /* FIXED WIDTH = KEY */
-    margin: 40px auto;
+
+    width: 900px;          /* ⭐ SINGLE WIDTH SOURCE */
+    max-width: 90%;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+
     text-align: left;
 }
 
-
-/* ⭐ FIX — Technical Skills Align With Name */
-.content-container.technical-skills {
-    margin-top: 30px;
+/* ===== ⭐ TECH SKILLS PERFECT ALIGN ===== */
+.technical-skills {
+    width: 100%;
+    margin-top: 40px;
+    padding-left: 0;
 }
 
-/* About Icons */
+/* ===== ICONS ===== */
 .about-icons {
     margin-top: 25px;
     display: flex;
     gap: 25px;
 }
 
-/* Icons */
 .about-icons i {
     font-size: 40px;
     color: black;
@@ -100,6 +110,7 @@ body {
     transform: scale(1.2);
 }
 
+/* ===== CONTACT TOOLTIP ===== */
 .contact-icon {
     position: relative;
     display: inline-block;
@@ -121,7 +132,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     bottom: -35px;
-    
+
     transition: opacity 0.3s;
     white-space: nowrap;
     font-size: 0.9rem;
@@ -132,18 +143,9 @@ body {
     visibility: visible;
     opacity: 1;
 }
-.tab-content {
-    display: none;
-    justify-content: center;
-}
 
-.tab-content.active {
-    display: flex;
+/* ===== ACTIVE TAB INDICATOR ===== */
+.tab-button.active {
+    border-bottom: 2px solid #fff;
+    font-weight: bold;
 }
-.technical-skills {
-    margin-top: 30px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-
