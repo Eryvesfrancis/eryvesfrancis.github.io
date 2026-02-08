@@ -200,5 +200,59 @@ body {
     margin-right: 8px;
     font-size: 14px;
 }
+/* ===== Achievements Section ===== */
 
+
+.achievements-section {
+margin-top: 30px;
+text-align: center;
+}
+
+
+.achievements-tabs {
+display: flex;
+justify-content: center;
+gap: 25px;
+margin-bottom: 20px;
+}
+
+
+.achievements-tab {
+cursor: pointer;
+color: #1a73e8;
+font-weight: 600;
+transition: 0.3s;
+}
+
+
+.achievements-tab:hover {
+text-decoration: underline;
+}
+
+
+.achievement-content {
+background: #f2f2f2;
+color: #000;
+padding: 20px;
+border-radius: 10px;
+max-width: 600px;
+margin: auto;
+}
+
+
+.achievement-content ul {
+list-style: none;
+padding: 0;
+}
+
+
+.achievement-content li {
+padding: 8px 0;
+border-bottom: 1px solid #ddd;
+}
+
+
+.achievement-content li:last-child {
+border-bottom: none;
+}
 
