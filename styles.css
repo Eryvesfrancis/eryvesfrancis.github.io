@@ -73,9 +73,11 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     max-width: 800px;
-    margin: auto;
+    margin-left: 0;      /* 👈 pushes to left */
+    margin-right: auto;
     text-align: left;
 }
+
 
 /* ✅ **NEW — ABOUT ICONS PROPER ALIGNMENT** */
 .about-icons {
@@ -128,11 +130,6 @@ body {
 .contact-icon:hover .tooltip {
     visibility: visible;
     opacity: 1;
-}
-.technical-skills {
-    text-align: left;
-    margin-left: 0;
-    align-self: flex-start;   /* if parent is flex */
 }
 
 
