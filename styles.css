@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;   /* FULL SCREEN HEIGHT */
     background: linear-gradient(to bottom, #f0f0f0, #dcdcdc);
-    text-align: center;
 }
 
 .header {
@@ -72,10 +72,11 @@ body {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    max-width: 800px;
-    margin: auto;
+    width: 800px;     /* FIXED WIDTH = KEY */
+    margin: 40px auto;
     text-align: left;
 }
+
 
 /* ⭐ FIX — Technical Skills Align With Name */
 .content-container.technical-skills {
@@ -114,7 +115,6 @@ body {
     width: max-content;
     background-color: #333;
     color: #fff;
-    text-align: center;
     padding: 5px 10px;
     border-radius: 5px;
 
@@ -133,3 +133,18 @@ body {
     visibility: visible;
     opacity: 1;
 }
+.tab-content {
+    display: none;
+    justify-content: center;
+}
+
+.tab-content.active {
+    display: flex;
+}
+.technical-skills {
+    margin-top: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
