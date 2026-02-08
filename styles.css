@@ -5,7 +5,6 @@ body {
     min-height: 100vh;   /* FULL SCREEN HEIGHT */
     background: linear-gradient(to bottom, #f0f0f0, #dcdcdc);
 }
-
 .header {
     background-color: #000;
     color: #fff;
