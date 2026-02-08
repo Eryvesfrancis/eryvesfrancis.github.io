@@ -231,10 +231,10 @@ text-decoration: underline;
 
 
 .achievement-content {
-background: #f2f2f2;
+background: transparent;
 color: #000;
-padding: 20px;
-border-radius: 10px;
+padding: 0;
+border-radius: 0;
 max-width: 600px;
 margin: auto;
 }
