@@ -77,23 +77,25 @@ body {
     text-align: left;
 }
 
+/* ⭐ FIX — Technical Skills Align With Name */
+.content-container.technical-skills {
+    margin-top: 30px;
+}
 
-
-/* ✅ **NEW — ABOUT ICONS PROPER ALIGNMENT** */
+/* About Icons */
 .about-icons {
     margin-top: 25px;
     display: flex;
     gap: 25px;
 }
 
-/* ✅ **NEW — ICON SIZE + COLOR CONTROL** */
+/* Icons */
 .about-icons i {
     font-size: 40px;
     color: black;
     transition: 0.3s;
 }
 
-/* ✅ **NEW — ICON HOVER EFFECT** */
 .about-icons i:hover {
     transform: scale(1.2);
 }
@@ -103,7 +105,7 @@ body {
     display: inline-block;
     margin: 0 10px;
     text-decoration: none;
-    color: #333; /* icon color */
+    color: #333;
 }
 
 .contact-icon .tooltip {
@@ -119,7 +121,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -35px; /* below the icon */
+    bottom: -35px;
     
     transition: opacity 0.3s;
     white-space: nowrap;
@@ -131,5 +133,3 @@ body {
     visibility: visible;
     opacity: 1;
 }
-
-
