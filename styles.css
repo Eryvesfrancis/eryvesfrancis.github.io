@@ -129,4 +129,10 @@ body {
     visibility: visible;
     opacity: 1;
 }
+.technical-skills {
+    text-align: left;
+    margin-left: 0;
+    align-self: flex-start;   /* if parent is flex */
+}
+
 
