@@ -1,1 +1,48 @@
+<!-- ================= index.html ================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHG CI Verification Automation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Automated Splunk Dashboard monitoring</h1>
 
+        <div class="section">
+            <h2>Problem Statement</h2>
+            <p>
+                For pre-checks and post-checks of Tomcat 10 services on VM servers, login access is restricted to the MW team, making us heavily dependent on them at the start and end of the activity.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Objectives</h2>
+            <p>
+               Implemented 100% automated monitoring for tracking all the Tomcat 10 services, ensuring they operate smoothly across the PROD and COB environments.
+               Tomcat 10 instance log paths (capturing incoming traffic) have been directly onboarded into the index, and the index is configured with the Splunk URL.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Limitations</h2>
+            <p>
+                Splunk dashboard monitoring is limited services running on Tomcat/VM servers and for ECS migrated services we already have dedicated ECS Openshift portal for tracking and restarts
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Current Enhancements</h2>
+<p> This dashboard enables monitoring of traffic patterns, including timestamps, source countries, targeted APIs, and whether the requests were successfully processed or blocked</p>
+        <div class="screenshot">
+            <h2>Screenshot</h2>
+            <p>Demo screenshot provided as a substitute for the original due to privacy constraints.</p>
+            <img src="screenshot4.jpg" alt="Automation Tool Screenshot" style="max-width:100%; height:auto;">
+        </div>
+    </div>
+<p> </p>
+<h2> <a href="index.html">← Back to Home</a> </h2>
+</body>
+</html>
