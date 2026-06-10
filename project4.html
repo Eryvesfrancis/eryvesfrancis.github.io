@@ -4,38 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHG CI Verification Automation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Automated Splunk Dashboard monitoring</h1>
+        <h1>Automated JAR Library Vulnerability Remediation Solution</h1>
 
         <div class="section">
             <h2>Problem Statement</h2>
             <p>
-                For pre-checks and post-checks of Tomcat 10 services on VM servers, login access is restricted to the MW team, making us heavily dependent on them at the start and end of the activity.
+                Problem Statement: 
+                Instead of Manually creating feature branch for each release , we have automated feature branch creations and code synchronization from the master branch for each release 
+                For every vulnerable jar version upgrade, developer has to manually update the jar version across multiple application  components 
+
             </p>
         </div>
 
         <div class="section">
             <h2>Objectives</h2>
             <p>
-               Implemented 100% automated monitoring for tracking all the Tomcat 10 services, ensuring they operate smoothly across the PROD and COB environments.
-               Tomcat 10 instance log paths (capturing incoming traffic) have been directly onboarded into the index, and the index is configured with the Splunk URL.
+               To eliminate manual updation of vulnerable jar version across multiple application components replaced by effective use of Copilot(enabled with Enterprise data protection)
             </p>
         </div>
 
         <div class="section">
-            <h2>Limitations</h2>
+            <h2>Current enhancements:</h2>
             <p>
-                Splunk dashboard monitoring is limited services running on Tomcat/VM servers and for ECS migrated services we already have dedicated ECS Openshift portal for tracking and restarts
+                Integrated light speed replacing traditional CI/CD approach for direct deployment using Harness skipping the jenkins build generation step before going with RLM deployment
             </p>
         </div>
 
         <div class="section">
-            <h2>Current Enhancements</h2>
-<p> This dashboard enables monitoring of traffic patterns, including timestamps, source countries, targeted APIs, and whether the requests were successfully processed or blocked</p>
+            <h2>Future enhancements:</h2>
+<p> Incorporating Renovate - An automated dependency update tool
+
+Key features of Renovate agent :
+Scanning for Updates: Continuously monitors for new versions of dependencies across various ecosystems (e.g.,Maven, Docker).
+Automated Pull Requests: Automatically generates pull/merge requests for each dependency update or group of updates once new versions are detected.
+Enhanced Security: Contributes to a more secure codebase by ensuring projects utilize the latest library versions, which frequently include critical security patches.
+Reduced Technical Debt: By automating the update process, Renovate prevents dependencies from becoming outdated and difficult to upgrade, thereby minimizing technical debt over time.
+</p>
         <div class="screenshot">
             <h2>Screenshot</h2>
             <p>Demo screenshot provided as a substitute for the original due to privacy constraints.</p>
