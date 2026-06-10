@@ -352,6 +352,12 @@ footer {
     text-align: center;
     margin-top: 30px;
 }
+.tab-content {
+    display: none;
+}
 
+.tab-content.active {
+    display: block;
+}
 
 
