@@ -10,65 +10,66 @@
 <body>
 
     <header class="header">
-        <div class="logo"></div>
-        <ul class="nav-links">
-            <li><a href="#" class="tab-button" data-tab="about">About</a></li>
-            <li><a href="#" class="tab-button active" data-tab="projects">Projects</a></li>
-            <li><a href="#" class="tab-button" data-tab="experience">Experience</a></li>
-        </ul>
-    </header>
+    <div class="logo"></div>
+    <ul class="nav-links">
+        <li><a href="#" class="tab-button" data-tab="about">About</a></li>
+        <li><a href="#" class="tab-button active" data-tab="projects">Projects</a></li>
+        <li><a href="#" class="tab-button" data-tab="experience">Experience</a></li>
+    </ul>
+</header>
 
-    <main class="main-content">
-       
-        <div id="projects" class="tab-content active">
-             <h3> Recent Projects</h3>
-            <div class="projects-container">
-                <div class="project-card">
-                    <div class="image-container" id="project1-img"></div>
-                    <h2>Automation-Based Approach for Change Request Validation in ITSM</h2>
-                    <a href="project1.html">Link</a>
-                </div>
-                <div class="project-card">
-                    <div class="image-container" id="project2-img"></div>
-                    <h2>
-                        Automated Splunk Dashboard monitoring
-                    </h2>
-                    <a href="project4.html">Link</a>
-                </div>
-                <div class="project-card">
-                    <div class="image-container" id="project3-img"></div>
-                    <h2>
-                        Advanced Jira Dashboard for Real-Time Story Tracking and Metrics Analysis
-                    </h2>
-                    <a href="project2.html">Link</a>
-                </div>
-                <div class="project-card">
-                    <div class="image-container" id="project2-img"></div>
-                    <h2>
-                        Automated JAR Library Vulnerability Remediation Solution
-                    </h2>
-                    <a href="project4.html">Link</a>
-                </div>
-                
-                <!-- Place link outside the grid -->
-    <div class="archive-link">
-        <a href="projects.html" target="_blank" class="btn">
-            View Full Project Archive →
-        </a>
+<main class="main-content">
+
+    <!-- PROJECTS TAB -->
+    <div id="projects" class="tab-content active">
+        <h3>Recent Projects</h3>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <div class="image-container" id="project1-img"></div>
+                <h2>Automation-Based Approach for Change Request Validation in ITSM</h2>
+                <a href="project1.html">Link</a>
+            </div>
+
+            <div class="project-card">
+                <div class="image-container" id="project2-img"></div>
+                <h2>Automated Splunk Dashboard Monitoring</h2>
+                <a href="project4.html">Link</a>
+            </div>
+
+            <div class="project-card">
+                <div class="image-container" id="project3-img"></div>
+                <h2>Advanced Jira Dashboard for Real-Time Story Tracking and Metrics Analysis</h2>
+                <a href="project2.html">Link</a>
+            </div>
+
+            <div class="project-card">
+                <div class="image-container" id="project4-img"></div>
+                <h2>Automated JAR Library Vulnerability Remediation Solution</h2>
+                <a href="project3.html">Link</a>
+            </div>
+
+        </div>
+
+        <div class="archive-link">
+            <a href="projects.html" target="_blank" class="btn">
+                View Full Project Archive →
+            </a>
+        </div>
     </div>
-</div>
 
-<div id="about" class="tab-content">
-    <div class="content-container">
+    <!-- ABOUT TAB -->
+    <div id="about" class="tab-content">
 
         <h1>Yves Francis</h1>
-        <h3>Infosec Engineer</h3>
+        <h3>Information Security Engineer</h3>
 
         <p>
-            Building secure, compliant infrastructure across CyberArk, cloud, and identity platforms.
+            Building secure, compliant infrastructure across CyberArk, cloud,
+            and identity platforms.
         </p>
 
-        <!-- ICONS -->
         <div class="about-icons">
 
             <a href="Yves-Francis_Infosec_5yrs_resume.pdf.pdf" download title="Download Resume">
@@ -95,114 +96,68 @@
 
         </div>
 
-        <!-- ⭐ TECHNICAL SKILLS OUTSIDE ICON FLEX -->
         <div class="technical-skills">
-            <h3>Technical Skills:</h3>
-            <p>Identity Governance and Administration, Privileged Account Management, Cloud Security, Vulnerability Remediation, SIEM Integration, CI/CD Tools</p>
+            <h3>Technical Skills</h3>
+            <p>
+                Identity Governance and Administration, Privileged Access Management,
+                Cloud Security, Vulnerability Remediation, SIEM Integration, CI/CD Tools
+            </p>
         </div>
-<div class="achievements-actions">
-    <span class="action-link" data-target="certifications">Certifications</span>
-    <span class="action-link" data-target="papers">Paper Presentations</span>
-    <span class="action-link" data-target="appreciations">Appreciations</span>
-</div>
 
-
-
-<!-- Certifications List -->
-<div id="certifications" class="achievement-content">
-<ul>
-<li>GitHub Foundations Certification — 2025</li>
-<li>Azure Fundamentals AZ-900 — 2025</li>
-<li>Qualys Vulnerability Management — 2024</li>
-</ul>
-</div>
-
-
-<!-- Paper Presentations -->
-<div id="papers" class="achievement-content">
-<ul>
-<li>Cloud Privileged Access Security — 2024</li>
-<li>Zero Trust for Banking Infrastructure — 2023</li>
-</ul>
-</div>
-
-
-<!-- Appreciations -->
-<div id="appreciations" class="achievement-content">
-<ul>
-<li>Client Appreciation for CyberArk Migration Delivery — 2025</li>
-<li>Spot Award for Critical Vulnerability Remediation — 2024</li>
-<li>Team Excellence Award — 2023</li>
-</ul>
-</div>
     </div>
 
+    <!-- EXPERIENCE TAB -->
+    <div id="experience" class="tab-content">
 
+        <h3>Assistant System Engineer · Tata Consultancy Services ↗</h3>
 
-</div>
-</div>
-<div id="experience" class="tab-content">
+        <p>
+            Enabled secure FID onboarding into IAM with vault-based credential protection.
+            Strengthened cloud security by resolving BCM exceptions, enforcing
+            encryption/tokenization for financial data (GDPR), and integrating
+            PAM with Splunk SIEM for enhanced monitoring for Citibank.
+        </p>
 
-<div class="content-container">
+        <div class="skills">
+            <span>CyberArk</span>
+            <span>GDPR</span>
+            <span>Data Encryption</span>
+            <span>SIEM</span>
+        </div>
 
-<div class="experience-card">
-    <span class="year">2020 — 2022</span>
+        <h3>System Engineer · Tata Consultancy Services ↗</h3>
 
-    <h3>Assistant System Engineer · Tata Consultancy Services ↗</h3>
+        <p>
+            Delivered IGA automation for access reviews and policies, enabled risk
+            dashboards for user lifecycle management, and performed Qualys
+            vulnerability assessments with prioritization to accelerate remediation.
+        </p>
 
-    <p>
-        Enabled secure FID onboarding into IAM with vault-based credential protection.
-        Strengthened cloud security by resolving BCM exceptions, enforcing encryption/tokenization for financial data (GDPR),
-        and integrating PAM with Splunk SIEM for enhanced monitoring for Citibank
-    </p>
+        <div class="skills">
+            <span>Identity Governance</span>
+            <span>PAM</span>
+            <span>Vulnerability Assessment</span>
+        </div>
 
-    <div class="skills">
-        <span>CyberArk</span>
-        <span>GDPR</span>
-        <span>Data encryption</span>
-        <span>SIEM</span>
+        <h3>IT Analyst · Tata Consultancy Services ↗</h3>
+
+        <p>
+            Delivered RLM to Lightspeed integration, enabled automated production
+            monitoring via Splunk dashboards, and enforced IP whitelisting to
+            strengthen access control and security compliance.
+        </p>
+
+        <div class="skills">
+            <span>Automated Monitoring</span>
+            <span>SIEM</span>
+            <span>RLM to LSE</span>
+            <span>Identity Governance</span>
+        </div>
+
     </div>
-</div>
 
-<div class="experience-card">
-    <span class="year">2022 — 2025</span>
+</main>
 
-    <h3>System Engineer · Tata Consultancy Services ↗</h3>
-
-    <p>
-        Delivered IGA automation for access reviews and policies, enabled risk dashboards for user lifecycle management,
-        and performed Qualys vulnerability assessments with prioritization to accelerate remediation for Citibank
-    </p>
-
-    <div class="skills">
-        <span>Identity governance</span>
-        <span>PAM</span>
-        <span>Vulnerability assessment</span>
-    </div>
-</div>
-
-<div class="experience-card">
-    <span class="year">2025 — PRESENT</span>
-
-    <h3>IT Analyst · Tata Consultancy Services ↗</h3>
-
-    <p>
-        Delivered RLM to Lightspeed integration, enabled automated production monitoring via Splunk dashboards,
-        and enforced IP whitelisting to strengthen access control and security compliance for Citibank
-    </p>
-
-    <div class="skills">
-        <span>Automated Monitoring</span>
-        <span>SIEM</span>
-        <span>RLM to LSE</span>
-        <span>Identity governance</span>
-    </div>
-</div>
-
-</div>
-</div>
-    </main>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
