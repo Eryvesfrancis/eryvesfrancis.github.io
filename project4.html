@@ -2,7 +2,7 @@
 
 <div class="container">
 
-    <!-- Top Navigation -->
+    <!-- Left Navigation -->
     <div class="tabs">
         <button onclick="showContent('objective')">Objective</button>
         <button onclick="showContent('inputs')">Inputs</button>
@@ -10,6 +10,7 @@
         <button onclick="showContent('future')">Future Enhancements</button>
     </div>
 
+    <!-- Content -->
     <div class="content">
 
         <h1>Automated JAR Library Vulnerability Remediation Solution</h1>
@@ -26,50 +27,28 @@
             <h2>Inputs</h2>
             <p>
                 Build an Excel sheet containing vulnerable JAR libraries and their
-                corresponding GOTO versions for every application component
-                based on Archer reports.
+                corresponding GOTO versions for every application component.
             </p>
         </div>
 
         <div id="current" class="tabContent">
             <h2>Current Enhancements</h2>
             <p>
-                Integrated LightSpeed deployment using Harness, replacing the
-                traditional CI/CD approach and skipping Jenkins build generation.
+                Integrated LightSpeed deployment using Harness.
             </p>
         </div>
 
         <div id="future" class="tabContent">
             <h2>Future Enhancements</h2>
-
-            <h3>Renovate - Automated Dependency Update Agent</h3>
-
             <ul>
                 <li>Continuously scans Maven, Docker and other ecosystems.</li>
                 <li>Automatically creates Pull Requests.</li>
                 <li>Applies latest dependency security patches.</li>
-                <li>Reduces technical debt.</li>
             </ul>
-
         </div>
 
     </div>
 
 </div>
-
-<script>
-function showContent(id){
-
-    let tabs = document.getElementsByClassName("tabContent");
-
-    for(let i=0;i<tabs.length;i++){
-        tabs[i].style.display="none";
-    }
-
-    document.getElementById(id).style.display="block";
-}
-
-showContent("objective");
-</script>
 
 </body>
