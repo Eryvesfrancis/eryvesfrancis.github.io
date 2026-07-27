@@ -1,54 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated JAR Library Vulnerability Remediation Solution</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main Layout */
+        .container{
+            display:flex;
+            min-height:100vh;
+        }
+
+        /* Left Side Navigation */
+        .tabs{
+            width:260px;
+            background:#2b2b2b;
+            padding:20px 10px;
+            display:flex;
+            flex-direction:column;
+            gap:12px;
+        }
+
+        .tabs button{
+            width:100%;
+            padding:15px;
+            font-size:16px;
+            text-align:left;
+            border:3px solid black;
+            background:white;
+            cursor:pointer;
+        }
+
+        .tabs button:hover{
+            background:#ddd;
+        }
+
+        /* Right Side Content */
+        .content{
+            flex:1;
+            padding:30px;
+        }
+
+        h1{
+            margin-bottom:25px;
+        }
+
+        h2{
+            margin-bottom:10px;
+        }
+
+        p{
+            margin-bottom:15px;
+            line-height:1.6;
+        }
+
+        ul{
+            margin-left:25px;
+            line-height:1.8;
+        }
+
+        .tabContent{
+            display:none;
+        }
+
+        .back{
+            margin-top:30px;
+        }
+
+        .back a{
+            text-decoration:none;
+            color:blue;
+        }
+    </style>
+</head>
+
 <body>
 
 <div class="container">
 
     <!-- Left Navigation -->
     <div class="tabs">
-        <button onclick="showContent('objective')">Objective</button>
+        <button onclick="showContent('problem')">Problem Statement</button>
+        <button onclick="showContent('objective')">Objectives</button>
         <button onclick="showContent('inputs')">Inputs</button>
         <button onclick="showContent('current')">Current Enhancements</button>
         <button onclick="showContent('future')">Future Enhancements</button>
     </div>
 
-    <!-- Content -->
+    <!-- Right Content -->
     <div class="content">
 
         <h1>Automated JAR Library Vulnerability Remediation Solution</h1>
 
-        <div id="objective" class="tabContent">
-            <h2>Objective</h2>
+        <div id="problem" class="tabContent">
+            <h2>Problem Statement</h2>
+
             <p>
-                To eliminate manual updates of vulnerable JAR versions across multiple
-                application components using GitHub Copilot with Enterprise Data Protection.
+                Instead of manually creating feature branches for every release,
+                we have automated feature branch creation and code synchronization
+                from the master branch.
+            </p>
+
+            <p>
+                For every vulnerable JAR version upgrade, developers manually
+                update Maven dependency versions across multiple application
+                components.
+            </p>
+        </div>
+
+        <div id="objective" class="tabContent">
+            <h2>Objectives</h2>
+
+            <p>
+                Eliminate manual updates of vulnerable JAR versions across
+                multiple application components using GitHub Copilot with
+                Enterprise Data Protection.
             </p>
         </div>
 
         <div id="inputs" class="tabContent">
             <h2>Inputs</h2>
+
             <p>
-                Build an Excel sheet containing vulnerable JAR libraries and their
-                corresponding GOTO versions for every application component.
+                Build an Excel sheet containing vulnerable JAR libraries and
+                their corresponding GOTO versions for each application
+                component based on Archer reports.
             </p>
         </div>
 
         <div id="current" class="tabContent">
             <h2>Current Enhancements</h2>
+
             <p>
-                Integrated LightSpeed deployment using Harness.
+                Integrated LightSpeed deployment using Harness, replacing the
+                traditional CI/CD approach and skipping Jenkins build
+                generation before RLM deployment.
             </p>
         </div>
 
         <div id="future" class="tabContent">
             <h2>Future Enhancements</h2>
+
+            <p><strong>Renovate - Automated Dependency Update Agent</strong></p>
+
             <ul>
                 <li>Continuously scans Maven, Docker and other ecosystems.</li>
                 <li>Automatically creates Pull Requests.</li>
-                <li>Applies latest dependency security patches.</li>
+                <li>Applies the latest dependency security patches.</li>
+                <li>Reduces technical debt by keeping dependencies up to date.</li>
             </ul>
+        </div>
+
+        <div class="back">
+            <h3><a href="index.html">← Back to Home</a></h3>
         </div>
 
     </div>
 
 </div>
 
+<script>
+function showContent(id){
+
+    let tabs = document.querySelectorAll(".tabContent");
+
+    tabs.forEach(function(tab){
+        tab.style.display = "none";
+    });
+
+    document.getElementById(id).style.display = "block";
+}
+
+window.onload = function(){
+    showContent("problem");
+}
+</script>
+
 </body>
+</html>
