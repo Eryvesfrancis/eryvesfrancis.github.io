@@ -1,118 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Automated JAR Library Vulnerability Remediation Solution</title>
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-
 <body>
 
 <div class="container">
 
-    <!-- Left Menu -->
-
-    <div class="sidebar">
-
-        <button onclick="showContent('objective')">
-            Objective
-        </button>
-
-        <button onclick="showContent('inputs')">
-            Inputs
-        </button>
-
-        <button onclick="showContent('current')">
-            Current Enhancements
-        </button>
-
-        <button onclick="showContent('future')">
-            Future Enhancements
-        </button>
-
+    <!-- Top Navigation -->
+    <div class="tabs">
+        <button onclick="showContent('objective')">Objective</button>
+        <button onclick="showContent('inputs')">Inputs</button>
+        <button onclick="showContent('current')">Current Enhancements</button>
+        <button onclick="showContent('future')">Future Enhancements</button>
     </div>
-
-
-    <!-- Right Content -->
 
     <div class="content">
 
         <h1>Automated JAR Library Vulnerability Remediation Solution</h1>
 
-        <!-- Objective -->
-
-        <div id="objective" class="tabContent active">
-
+        <div id="objective" class="tabContent">
             <h2>Objective</h2>
-
             <p>
-
                 To eliminate manual updates of vulnerable JAR versions across multiple
                 application components using GitHub Copilot with Enterprise Data Protection.
-
             </p>
-
         </div>
 
-
-        <!-- Inputs -->
-
         <div id="inputs" class="tabContent">
-
             <h2>Inputs</h2>
-
             <p>
-
                 Build an Excel sheet containing vulnerable JAR libraries and their
                 corresponding GOTO versions for every application component
                 based on Archer reports.
-
             </p>
-
         </div>
-
-
-        <!-- Current -->
 
         <div id="current" class="tabContent">
-
             <h2>Current Enhancements</h2>
-
             <p>
-
-                Integrated LightSpeed deployment using Harness, replacing the traditional
-                CI/CD approach and skipping Jenkins build generation before RLM deployment.
-
+                Integrated LightSpeed deployment using Harness, replacing the
+                traditional CI/CD approach and skipping Jenkins build generation.
             </p>
-
         </div>
 
-
-        <!-- Future -->
-
         <div id="future" class="tabContent">
-
             <h2>Future Enhancements</h2>
 
             <h3>Renovate - Automated Dependency Update Agent</h3>
 
             <ul>
-
                 <li>Continuously scans Maven, Docker and other ecosystems.</li>
-
                 <li>Automatically creates Pull Requests.</li>
-
                 <li>Applies latest dependency security patches.</li>
-
                 <li>Reduces technical debt.</li>
-
             </ul>
 
         </div>
@@ -121,27 +57,19 @@
 
 </div>
 
-
 <script>
-
 function showContent(id){
 
-    var tabs=document.getElementsByClassName("tabContent");
+    let tabs = document.getElementsByClassName("tabContent");
 
-    for(var i=0;i<tabs.length;i++){
-
+    for(let i=0;i<tabs.length;i++){
         tabs[i].style.display="none";
-
     }
 
     document.getElementById(id).style.display="block";
-
 }
 
 showContent("objective");
-
 </script>
 
 </body>
-
-</html>
