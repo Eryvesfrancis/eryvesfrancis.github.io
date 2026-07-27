@@ -64,18 +64,3 @@ window.addEventListener("DOMContentLoaded", () => {
         actionLinks[0].classList.add("active");
     }
 });
-
-
-
-function showContent(id){
-
-    let tabs = document.getElementsByClassName("tabContent");
-
-    for(let i = 0; i < tabs.length; i++){
-        tabs[i].style.display = "none";
-    }
-
-    document.getElementById(id).style.display = "block";
-}
-
-showContent("objective");
