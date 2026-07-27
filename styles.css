@@ -347,3 +347,52 @@ footer {
     font-size: 14px;
     color: #6b7280;
 }
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* Left side menu */
+.tabs{
+    width:250px;
+    background:#222;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+/* Buttons */
+.tabs button{
+    width:100%;
+    padding:12px;
+    font-size:18px;
+    text-align:left;
+    background:white;
+    border:3px solid black;
+    cursor:pointer;
+}
+
+.tabs button:hover{
+    background:#ddd;
+}
+
+/* Right side content */
+.content{
+    flex:1;
+    padding:30px;
+}
+
+.tabContent{
+    display:none;
+}
+
