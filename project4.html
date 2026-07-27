@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automated JAR Library Vulnerability Remediation Solution</title>
+    <title>POC on Automated Vulnerability Remediation</title>
 
     <style>
         *{
@@ -91,56 +91,52 @@
 
     <!-- Left Navigation -->
     <div class="tabs">
-        <button onclick="showContent('problem')">Problem Statement</button>
-        <button onclick="showContent('objective')">Objectives</button>
-        <button onclick="showContent('inputs')">Inputs</button>
-        <button onclick="showContent('current')">Current Enhancements</button>
-        <button onclick="showContent('future')">Future Enhancements</button>
+        <button onclick="showContent('problem')">Introduction</button>
+        <button onclick="showContent('objective')">Automated Release Branch Creation and Code Sync</button>
+        <button onclick="showContent('inputs')">Automated Jar library update</button>
+        <button onclick="showContent('current')">LightSpeed Deployment Integration</button>
+        <button onclick="showContent('future')">Renovate - Automated Dependency Update AI Agent</button>
     </div>
 
     <!-- Right Content -->
     <div class="content">
 
-        <h1>Automated JAR Library Vulnerability Remediation Solution</h1>
+        <h1>POC on Automated Vulnerability Remediation</h1>
 
         <div id="problem" class="tabContent">
-            <h2>Problem Statement</h2>
+            <h2>Introduction</h2>
 
             <p>
-                Instead of manually creating feature branches for every release,
-                we have automated feature branch creation and code synchronization
-                from the master branch.
+                This Proof of Concept (POC) demonstrates how AI-powered automation can streamline software maintenance and release management by reducing manual effort across key development activities. The solution leverages Microsoft Copilot to automate feature branch creation, code synchronization, and vulnerable JAR library updates, while integrating modern deployment practices through Harness LightSpeed.
+                It also outlines a future roadmap for continuous dependency management using Renovate, enabling faster, more secure, and efficient software delivery
             </p>
 
-            <p>
-                For every vulnerable JAR version upgrade, developers manually
-                update Maven dependency versions across multiple application
-                components.
-            </p>
         </div>
 
         <div id="objective" class="tabContent">
-            <h2>Objectives</h2>
+            <h2>Automated Release Branch Creation and Code Sync</h2>
 
             <p>
-                Eliminate manual updates of vulnerable JAR versions across
-                multiple application components using GitHub Copilot with
-                Enterprise Data Protection.
+                Using Microsoft Copilot, automate the creation of feature branches for each monthly release and code synchronization from the master branch to the feature branch, significantly reducing the manual effort involved in the release process
             </p>
         </div>
 
         <div id="inputs" class="tabContent">
-            <h2>Inputs</h2>
+            <h2>Automated Jar library update</h2>
 
             <p>
-                Build an Excel sheet containing vulnerable JAR libraries and
+                Build a .csv or .xlsxl sheet containing vulnerable JAR libraries and
                 their corresponding GOTO versions for each application
                 component based on Archer reports.
+            </p>
+            <p>
+                Sharing prepared sheet to Microsoft Copilot enabled with Enterprise Data protection to automatically replace the outdated JAR libraries with the latest ones across
+                multiple application components.
             </p>
         </div>
 
         <div id="current" class="tabContent">
-            <h2>Current Enhancements</h2>
+            <h2>LightSpeed Deployment Integration</h2>
 
             <p>
                 Integrated LightSpeed deployment using Harness, replacing the
@@ -150,10 +146,7 @@
         </div>
 
         <div id="future" class="tabContent">
-            <h2>Future Enhancements</h2>
-
-            <p><strong>Renovate - Automated Dependency Update Agent</strong></p>
-
+            <h2>Renovate - Automated Dependency Update AI Agent</h2>
             <ul>
                 <li>Continuously scans Maven, Docker and other ecosystems.</li>
                 <li>Automatically creates Pull Requests.</li>
