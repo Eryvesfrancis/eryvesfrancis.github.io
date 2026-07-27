@@ -1,54 +1,147 @@
-<!-- ================= index.html ================= -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Automated JAR Library Vulnerability Remediation Solution</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <div class="container">
+
+<div class="container">
+
+    <!-- Left Menu -->
+
+    <div class="sidebar">
+
+        <button onclick="showContent('objective')">
+            Objective
+        </button>
+
+        <button onclick="showContent('inputs')">
+            Inputs
+        </button>
+
+        <button onclick="showContent('current')">
+            Current Enhancements
+        </button>
+
+        <button onclick="showContent('future')">
+            Future Enhancements
+        </button>
+
+    </div>
+
+
+    <!-- Right Content -->
+
+    <div class="content">
+
         <h1>Automated JAR Library Vulnerability Remediation Solution</h1>
 
-        <div class="section">
-            <h2>Problem Statement</h2>
-            <p>
-                Instead of Manually creating feature branch for each release , we have automated feature branch creations and code synchronization from the master branch for each release</p> 
-            <p> For every vulnerable jar version upgrade, developer has to manually update the jar version from Maven dependency tree across multiple application components </p>
+        <!-- Objective -->
 
-            
-        </div>
+        <div id="objective" class="tabContent active">
 
-        <div class="section">
-            <h2>Objectives</h2>
+            <h2>Objective</h2>
+
             <p>
-               To eliminate manual updation of vulnerable jar version across multiple application components replaced by effective use of Copilot(enabled with Enterprise data protection)
+
+                To eliminate manual updates of vulnerable JAR versions across multiple
+                application components using GitHub Copilot with Enterprise Data Protection.
+
             </p>
+
         </div>
-        <div class="section">
+
+
+        <!-- Inputs -->
+
+        <div id="inputs" class="tabContent">
+
             <h2>Inputs</h2>
-            <p>Build a excel sheet containing list of vulnerable jar libraries and its corresponding GOTO version for each component based on the reports shared from archer</p> 
-        </div>
-            <div class="section">
-            <h2>Current enhancements:</h2>
+
             <p>
-                Integrated light speed replacing traditional CI/CD approach for direct deployment using Harness skipping the jenkins build generation step before going with RLM deployment
+
+                Build an Excel sheet containing vulnerable JAR libraries and their
+                corresponding GOTO versions for every application component
+                based on Archer reports.
+
             </p>
+
         </div>
 
-        <div class="section">
-            <h2>Future enhancements:</h2>
-<p> Incorporating Renovate - An automated dependency update agent
 
-<p>Key features of Renovate agent :
-<p>Scanning for Updates: Continuously monitors for new versions of dependencies across various ecosystems (e.g.,Maven, Docker).</p>
-<p>Automated Pull Requests: Automatically generates pull/merge requests for each dependency update or group of updates once new versions are detected.</p>
-<p>Enhanced Security: Contributes to a more secure codebase by ensuring projects utilize the latest library versions, which frequently include critical security patches.</p>
-<p>Reduced Technical Debt: By automating the update process, Renovate prevents dependencies from becoming outdated and difficult to upgrade, thereby minimizing technical debt over time.</p>
-</p>
-        
+        <!-- Current -->
+
+        <div id="current" class="tabContent">
+
+            <h2>Current Enhancements</h2>
+
+            <p>
+
+                Integrated LightSpeed deployment using Harness, replacing the traditional
+                CI/CD approach and skipping Jenkins build generation before RLM deployment.
+
+            </p>
+
+        </div>
+
+
+        <!-- Future -->
+
+        <div id="future" class="tabContent">
+
+            <h2>Future Enhancements</h2>
+
+            <h3>Renovate - Automated Dependency Update Agent</h3>
+
+            <ul>
+
+                <li>Continuously scans Maven, Docker and other ecosystems.</li>
+
+                <li>Automatically creates Pull Requests.</li>
+
+                <li>Applies latest dependency security patches.</li>
+
+                <li>Reduces technical debt.</li>
+
+            </ul>
+
+        </div>
+
     </div>
-<p> </p>
-<h2> <a href="index.html">← Back to Home</a> </h2>
+
+</div>
+
+
+<script>
+
+function showContent(id){
+
+    var tabs=document.getElementsByClassName("tabContent");
+
+    for(var i=0;i<tabs.length;i++){
+
+        tabs[i].style.display="none";
+
+    }
+
+    document.getElementById(id).style.display="block";
+
+}
+
+showContent("objective");
+
+</script>
+
 </body>
+
 </html>
